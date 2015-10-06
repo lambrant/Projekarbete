@@ -24,16 +24,49 @@
             </div>
         </header>
 <!--------------------------------------End of Menu---------------------------------------------------->       
-    <div id="container">
+        <div id="container">
             
             <div id="content">
                 
-                
-                
-            </div>
+                <h2>Contact</h2>
+                <p>
+                    If you want to have the latest news and happenings delivered directly to you,
+                    it is just a petty minute away. The only thing that you have to do is to fill
+                    out and send this form and all the juicy news will drop down in your inbox as 
+                    soon as we post them.
+                </p>
             
-            <div id="footer">
+                <div id="form">
+                    <form id="form" action="../form.php" method="POST">
+                    
+                        <fieldset>
+                            <legend>Your information</legend>
+                            <p>
+                                <label for="first">First name:</label>
+                                <input class="inputInfo" id="first" type="text" name="firstName" placeholder="First Name" />
+                            </p>
+                            <p>
+                                <label for="last">Last name:</label>
+                                <input class="inputInfo" id="last" type="text" name="lastName" placeholder="Last name" />
+                            </p>
+                            <p>
+                                <label for="mail">E-mail:</label>
+                                <input class="inputInfo" id="mail" type="email" name="email" placeholder="E-mail" />
+                            </p>
+                            
+                            <!--<button  id="sendButton" type="button" class="rightSide">Send</button>-->
+                            <input  id="sendButton" class="rightSide" type="submit" value="Send"/>
+                            
+                        </fieldset>
+                    
+                    </form>
                 
+                </div>
+            
+                <div id="footer">
+                
+                </div>
+            
             </div>
             
         </div>
