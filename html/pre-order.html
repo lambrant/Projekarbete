@@ -30,10 +30,47 @@
                 
                 <h1>Pre-order</h1>
                 <p>
-                    Pre-order now to get access to exclusive content in form of different skins
-                    so you can personalize your Guard to suit your own play style. You will also
-                    get a special desiged art book filled with concept art from the game. 
+                    Pre-order the game now to get a chance to win an exclusive meet and greet 
+                    with the team behind Guard, G303 Studios in the actual studio where the 
+                    magic happends.
+                    Or pre-order the Collectors Edition now to not only get a chance to win 
+                    the stuff above but also get access to exclusive content in form of 
+                    different skins so you can personalize your Guard to suit your own 
+                    play style. You will also get a special desiged art book filled with 
+                    concept art from the game. 
                 </p>
+                
+                <div id="pre-orderForm">
+                    <form id="pre-orderForm" action="../pre-orderForm.php" method="POST">
+                    
+                        <legend>Your information</legend>
+                        <p>
+                            <label for="first">First name:</label>
+                            <input class="inputInfo" id="first" type="text" name="firstName" placeholder="First Name" />
+                        </p>
+                        <p>
+                            <label for="last">Last name:</label>
+                            <input class="inputInfo" id="last" type="text" name="lastName" placeholder="Last name" />
+                        </p>
+                        <p>
+                            <label for="mail">E-mail:</label>
+                            <input class="inputInfo" id="mail" type="email" name="email" placeholder="E-mail" />
+                        </p>
+                        <p>
+                            <label for="edition">Edition:</label>
+                            <select id="edition" name="edition">
+                                <option value="" disabled="disabled" selected="selected" style="display:none">Choose one..</option>
+                                <option value="Standard">Standard</option>
+                                <option value="CollectorsEdition">Collectors Edition</option>
+                            </select>
+                        </p>
+                        
+                        <!--<button  id="sendButton" type="button" class="rightSide">Send</button>-->
+                        <input  id="sendButton" type="submit" value="Send"/>
+                    
+                    </form>
+                
+                </div>
                 
             </div>
             
