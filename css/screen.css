@@ -22,36 +22,35 @@ body {
     height: 50px; /*change the border height */
     float:left;
     width:100%;
-    background: black; /*backround of border*/
-    position:relative; 
+    background: black;
+    position: fixed;
 }
 .meny ul { 
-   clear:left;
-   float:left;
-   list-style:none;
-   margin:0;
-   padding:0;
-   position:relative;
-   left:50%;
-   text-align:center;
+    clear:left;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:fixed;
+    left:50%;
+    text-align:center;
 }
 .meny ul li {
-   display:block;
-   float:left;
-   list-style:none;
-   margin:0;
-   padding:0;
-   position:relative;
-   right:50%;
+    display:block;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    right:50%;
 }
 .meny ul li a {
-   display:block;
-   margin:0 0 0 1px;
-   padding:3px 10px;
-   background:#ddd;
-   color:#000;
-   text-decoration:none;
-   line-height:1.3em;
+    display: block;
+    margin:0 0 0 1px;
+    padding:15px 25px;
+    background:#ddd;
+    color:#000;
+    text-decoration:none;
 }
 .meny ul li a:hover {
    background:#369;
@@ -62,6 +61,10 @@ body {
    color:#fff;
    background:#000;
    font-weight:bold;
+}
+
+#content {
+    margin: 100px; 
 }
 
 

@@ -13,28 +13,36 @@
 body {
     font-family: exo, arial, serif;
     color: rgb(240, 240, 240);
+    margin: 0px;
 }
 #content {
     background-color: black;
-    width: 70%;
     float: left;
-    margin-left: 15%;
     text-align: center;
+    padding-top: 100px; /*Change text from meny */
 }
 p {
     text-align: justify;
     display: inline-block;
     width: 90%;
 }
-.h3Headline{
+.h3Headline {
     text-decoration: underline;
+}
+.newsH3 h3{                /*they will get an image to the left of them*/
+    background-image: url("pics/square.png");   
+    background-position: 5%;
+    background-repeat: no-repeat;
+}
+a {
+    color: rgb(255, 100, 0);
 }
 /*----------------------End general css-----------------------------------------*/
 
 /*----------------------Footer css-----------------------------------------*/
 
 #footer{            /*Sets stats for everything inside of the footer block*/
-    background: black;
+    background-color: rgb(35, 35, 35);
     width: 100%;
     height: 60px;
     clear: both;        /*Pushes the footer down to the bottom of the page*/
@@ -55,7 +63,28 @@ p {
 /*----------------------End footer css-----------------------------------------*/
 
 /*----------------------Menu css------------------------------------------------*/
+header{
+    position: fixed;
+    background-color: rgb(35, 35, 35);
+    width: 100%;
+}
+.meny {
+    text-align:center;
+    
+}
 
+.meny ul{
+    padding: 0;
+    display:block;
+}
+
+.meny ul li{
+    
+}
+
+.meny ul li a {
+    text-decoration:none;
+}
 
 
 /*----------------------End menu css----------------------------------------------*/
@@ -77,19 +106,48 @@ p {
 .newsParagraph {
     height: 80px;
     overflow: hidden;        /*Script event to expand the paragraphs*/
-    line-height: 20px;
+    line-height: 18px;
 }
 
 /*----------------------End news css---------------------------------------------*/
 
-/*----------------------pre-order css--------------------------------------------*/
+/*----------------------Form css---------------------------------------------*/
 
+#pre-orderForm, #contactForm {
+    background-color: rgb(50, 50, 50);
+}
+legend {
+    margin: auto;
+    color: rgb(255, 100, 0);
+}
+input[type=text], input[type=email], input[type=submit], #edition {
+    font-family: inherit;
+    border-radius: 5px;
+    border-color: black;
+    border-style: ridge;
+    border-width: 3px;
+    width: inherit;
+    max-width: 55%;
+}
+#first.inputInfo, #last.inputInfo, #mail.inputInfo, #edition {
+    float: right;
+}
+#sendButton {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+#first.inputInfo:focus, #last.inputInfo:focus, #mail.inputInfo:focus, label, #sendButton:hover, #edition:hover {
+    color: rgb(255, 100, 0);
+}
+
+/*----------------------End form css--------------------------------------------*/
+
+/*----------------------pre-order css--------------------------------------------*/
 
 
 /*----------------------End pre-order css---------------------------------------*/
 
 /*----------------------Contact css--------------------------------------------*/
-
 
 
 /*-----------------------End contact css----------------------------------------*/
