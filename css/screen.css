@@ -1,0 +1,99 @@
+/*-----------------------General css---------------------------------*/
+@font-face {
+    font-family: 'exo';
+    src: url('font/exo2.0-black-webfont.eot');
+    src: url('font/exo2.0-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/exo2.0-black-webfont.woff2') format('woff2'),
+         url('font/exo2.0-black-webfont.woff') format('woff'),
+         url('font/exo2.0-black-webfont.ttf') format('truetype'),
+         url('font/exo2.0-black-webfont.svg#exo_2.0black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: exo, arial, serif;
+}
+/*----------------------End general css-----------------------------------------*/
+
+/*----------------------Menu css------------------------------------------------*/
+
+.meny { /*Changes to the main meny, border*/
+    height: 50px; /*change the border height */
+    float:left;
+    width:100%;
+    background: black; /*backround of border*/
+    position:relative; 
+}
+.meny ul { 
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+}
+.meny ul li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:50%;
+}
+.meny ul li a {
+   display:block;
+   margin:0 0 0 1px;
+   padding:3px 10px;
+   background:#ddd;
+   color:#000;
+   text-decoration:none;
+   line-height:1.3em;
+}
+.meny ul li a:hover {
+   background:#369;
+   color:#fff;
+}
+.meny ul li a.active,
+.meny ul li a.active:hover {
+   color:#fff;
+   background:#000;
+   font-weight:bold;
+}
+
+
+/*----------------------End menu css----------------------------------------------*/
+
+/*----------------------Home css------------------------------------------------*/
+
+
+
+/*----------------------End home css--------------------------------------------*/
+
+/*----------------------About css------------------------------------------------*/
+
+
+
+/*----------------------End about css---------------------------------------------*/
+
+/*----------------------News css-------------------------------------------------*/
+
+
+
+/*----------------------End news css---------------------------------------------*/
+
+/*----------------------pre-order css--------------------------------------------*/
+
+
+
+/*----------------------End pre-order css---------------------------------------*/
+
+/*----------------------Contact css--------------------------------------------*/
+
+
+
+/*-----------------------End contact css----------------------------------------*/
+

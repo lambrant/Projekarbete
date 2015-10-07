@@ -1,0 +1,97 @@
+/*-----------------------General css---------------------------------*/
+@font-face {
+    font-family: 'exo';
+    src: url('font/exo2.0-black-webfont.eot');
+    src: url('font/exo2.0-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/exo2.0-black-webfont.woff2') format('woff2'),
+         url('font/exo2.0-black-webfont.woff') format('woff'),
+         url('font/exo2.0-black-webfont.ttf') format('truetype'),
+         url('font/exo2.0-black-webfont.svg#exo_2.0black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: exo, arial, serif;
+    color: rgb(240, 240, 240);
+}
+#content {
+    background-color: black;
+    width: 70%;
+    float: left;
+    margin-left: 15%;
+    text-align: center;
+}
+p {
+    text-align: justify;
+    display: inline-block;
+    width: 90%;
+}
+.h3Headline{
+    text-decoration: underline;
+}
+/*----------------------End general css-----------------------------------------*/
+
+/*----------------------Footer css-----------------------------------------*/
+
+#footer{            /*Sets stats for everything inside of the footer block*/
+    background: black;
+    width: 100%;
+    height: 60px;
+    clear: both;        /*Pushes the footer down to the bottom of the page*/
+}
+#footerImg{           /*Sets the position and size of the image in the footer*/
+    float: left;                                    
+    width: 5%;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+#footerP{       /*Changes the font size and position for the text in the footer*/
+    float: left;                
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: small;
+}
+
+/*----------------------End footer css-----------------------------------------*/
+
+/*----------------------Menu css------------------------------------------------*/
+
+
+
+/*----------------------End menu css----------------------------------------------*/
+
+/*----------------------Home css------------------------------------------------*/
+
+
+
+/*----------------------End home css--------------------------------------------*/
+
+/*----------------------About css------------------------------------------------*/
+
+
+
+/*----------------------End about css---------------------------------------------*/
+
+/*----------------------News css-------------------------------------------------*/
+
+.newsParagraph {
+    height: 80px;
+    overflow: hidden;        /*Script event to expand the paragraphs*/
+    line-height: 20px;
+}
+
+/*----------------------End news css---------------------------------------------*/
+
+/*----------------------pre-order css--------------------------------------------*/
+
+
+
+/*----------------------End pre-order css---------------------------------------*/
+
+/*----------------------Contact css--------------------------------------------*/
+
+
+
+/*-----------------------End contact css----------------------------------------*/
+
+
