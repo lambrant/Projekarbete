@@ -19,7 +19,7 @@ body {
     background-color: black;
     float: left;
     text-align: center;
-    padding-top: 100px; /*Change text from meny */
+    padding-top: 350px; /*Change text from meny */
 }
 p {
     text-align: justify;
@@ -28,11 +28,6 @@ p {
 }
 .h3Headline {
     text-decoration: underline;
-}
-.newsH3 h3{                /*they will get an image to the left of them*/
-    background-image: url("pics/square.png");   
-    background-position: 5%;
-    background-repeat: no-repeat;
 }
 a {
     color: rgb(255, 100, 0);
@@ -48,15 +43,16 @@ a {
     clear: both;        /*Pushes the footer down to the bottom of the page*/
 }
 #footerImg{           /*Sets the position and size of the image in the footer*/
-    float: left;                                    
-    width: 5%;
-    margin-left: 3%;
-    margin-top: 1%;
+  position: absolute;
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 #footerP{       /*Changes the font size and position for the text in the footer*/
-    float: left;                
-    margin-left: 2%;
-    margin-top: 2%;
+    position: absolute;
+    margin-left: 50px;
+    width: 80px;
+    margin-top: 10px;
     font-size: small;
 }
 
@@ -68,22 +64,36 @@ header{
     background-color: rgb(35, 35, 35);
     width: 100%;
 }
-.meny {
-    text-align:center;
-    
+
+header a{
+    padding: 15px;
+    display:block;
+    text-decoration:none;
+    margin: 0;
 }
 
-.meny ul{
+
+nav {
+    text-align:center;
+    background-color: rgb(35, 35, 35);
+    width: 100%;
+}
+
+nav ul{
+    margin: 0;
     padding: 0;
     display:block;
 }
 
-.meny ul li{
-    
+nav ul li{
+    border: solid;
 }
 
-.meny ul li a {
+nav ul li a {
+    padding: 15px;
+    display:block;
     text-decoration:none;
+    margin: 0;
 }
 
 
@@ -131,12 +141,13 @@ input[type=text], input[type=email], input[type=submit], #edition {
 }
 #first.inputInfo, #last.inputInfo, #mail.inputInfo, #edition {
     float: right;
+    color: rgb(255, 100, 0);
 }
 #sendButton {
     margin-top: 15px;
     margin-bottom: 10px;
 }
-#first.inputInfo:focus, #last.inputInfo:focus, #mail.inputInfo:focus, label, #sendButton:hover, #edition:hover {
+label, #sendButton:hover {
     color: rgb(255, 100, 0);
 }
 

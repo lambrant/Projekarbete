@@ -1,82 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-     
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contactpage - Guard</title>
-        <link rel="stylesheet" href="../css/mobile.css" />
-        <link rel="stylesheet" media="screen and (min-width: 481px)"  href="../css/screen.css" />
-    </head>
 
-    <body class="">
-<!--------------------------------------The Menu---------------------------------------------------->
-        <header id="" role="" class="banner">
-            <div id="" class="meny">
-                <nav id="" role="">
-                    <ul id="" class="menylist"> 
-                        <li><a id="" class="menybutton" href="../html/about.html">About</a></li>
-                        
-                        <li><a id="" class="menybutton" href="../html/news.html">News</a></li>
-                        
-                        <li><a id="" class="menybutton" href="../html/pre-order.html">Pre-order</a></li>
-                        
-                        <li><a id="" class="menybutton" href="../html/contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactpage - Guard</title>
+    <link rel="stylesheet" href="../css/mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 481px)" href="../css/screen.css" />
+</head>
+
+<body class="">
+    <!--------------------------------------The Menu---------------------------------------------------->
+    <header>
+        <abbr title="Click to home"><a href="../html/home.html">
+                <img src="../css/pics/square.png"></a></abbr>
+        <nav  role="">
+            <ul  class="">
+                <li><a href="../html/about.html">About</a></li>
+    
+                <li><a href="../html/news.html">News</a></li>
+    
+                <li><a href="../html/pre-order.html">Pre-order</a></li>
+    
+                <li><a href="../html/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--------------------------------------End of Menu---------------------------------------------------->
+    <div id="container">
+
+        <div id="content">
+
+            <h1>Contact</h1>
+            <p>
+                If you want to have the latest news and happenings delivered directly to you, it is just a petty minute away. The only thing that you have to do is to fill out and send this form and all the juicy news will drop down in your inbox as soon as we post them.
+            </p>
+
+            <div id="contactForm">
+                <form id="contactForm" action="../contactForm.php" method="POST">
+
+                    <legend>Your information</legend>
+                    <p>
+                        <label for="first">First name:</label>
+                        <input class="inputInfo" id="first" type="text" name="firstName" placeholder="First Name" />
+                    </p>
+                    <p>
+                        <label for="last">Last name:</label>
+                        <input class="inputInfo" id="last" type="text" name="lastName" placeholder="Last name" />
+                    </p>
+                    <p>
+                        <label for="mail">E-mail:</label>
+                        <input class="inputInfo" id="mail" type="email" name="email" placeholder="E-mail" />
+                    </p>
+
+                    <!--<button  id="sendButton" type="button" class="rightSide">Send</button>-->
+                    <input id="sendButton" type="submit" value="Send" />
+
+                </form>
+
             </div>
-        </header>
-<!--------------------------------------End of Menu---------------------------------------------------->       
-        <div id="container">
-            
-            <div id="content">
-                
-                <h1>Contact</h1>
-                <p>
-                    If you want to have the latest news and happenings delivered directly to you,
-                    it is just a petty minute away. The only thing that you have to do is to fill
-                    out and send this form and all the juicy news will drop down in your inbox as 
-                    soon as we post them.
-                </p>
-            
-                <div id="contactForm">
-                    <form id="contactForm" action="../contactForm.php" method="POST">
-                    
-                        <legend>Your information</legend>
-                        <p>
-                            <label for="first">First name:</label>
-                            <input class="inputInfo" id="first" type="text" name="firstName" placeholder="First Name" />
-                        </p>
-                        <p>
-                            <label for="last">Last name:</label>
-                            <input class="inputInfo" id="last" type="text" name="lastName" placeholder="Last name" />
-                        </p>
-                        <p>
-                            <label for="mail">E-mail:</label>
-                            <input class="inputInfo" id="mail" type="email" name="email" placeholder="E-mail" />
-                        </p>
-                        
-                        <!--<button  id="sendButton" type="button" class="rightSide">Send</button>-->
-                        <input  id="sendButton" type="submit" value="Send"/>
-                            
-                    </form>
-                
-                </div>
-            
-            </div>
-            
-            <div id="footer">
-                    
-                <img id="footerImg" src="../css/pics/square.png" alt="image of the Studio logo" />
-                
-                <p id="footerP">
-                    © 2015 G303 Studios
-                </p>
-                    
-            </div>
-            
+
         </div>
-    
-    </body>
-    
+
+        <div id="footer">
+
+            <img id="footerImg" src="../css/pics/square.png" alt="image of the Studio logo" />
+
+            <p id="footerP">
+                © 2015 G303 Studios
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+
 </html>
