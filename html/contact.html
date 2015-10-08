@@ -1,79 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contactpage - Guard</title>
-    <link rel="stylesheet" href="../css/mobile.css" />
-    <link rel="stylesheet" media="screen and (min-width: 481px)" href="../css/screen.css" />
-</head>
-
-<body class="">
-    <!--------------------------------------The Menu---------------------------------------------------->
-    <header>
-        <abbr title="Click to home"><a href="../html/home.html">
-                <img src="../css/pics/square.png"></a></abbr>
-        <nav  role="">
-            <ul  class="">
-                <li><a href="../html/about.html">About</a></li>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contactpage - Guard</title>
+        <link rel="stylesheet" href="../css/mobile.css" />
+        <link rel="stylesheet" media="screen and (min-width: 481px)" href="../css/screen.css" />
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-touch-icon-120x120.png">
+        <link rel="icon" type="image/png" href="../favicon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="../favicon/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="../favicon/manifest.json">
+        <link rel="shortcut icon" href="../favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#603cba">
+        <meta name="msapplication-config" content="../favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        
+    </head>
     
-                <li><a href="../html/news.html">News</a></li>
+    <body class="">
+        <!--------------------------------------The Menu---------------------------------------------------->
+        <header>
+            <abbr title="Click to home"><a href="../html/home.html">
+                    <img src="../css/pics/square.png"></a></abbr>
+            <nav  role="">
+                <ul  class="">
+                    <li><a href="../html/about.html">About</a></li>
+        
+                    <li><a href="../html/news.html">News</a></li>
+        
+                    <li><a href="../html/pre-order.html">Pre-order</a></li>
+        
+                    <li><a href="../html/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--------------------------------------End of Menu---------------------------------------------------->
+        <div id="container">
     
-                <li><a href="../html/pre-order.html">Pre-order</a></li>
+            <div id="content">
     
-                <li><a href="../html/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!--------------------------------------End of Menu---------------------------------------------------->
-    <div id="container">
-
-        <div id="content">
-
-            <h1>Contact</h1>
-            <p>
-                If you want to have the latest news and happenings delivered directly to you, it is just a petty minute away. The only thing that you have to do is to fill out and send this form and all the juicy news will drop down in your inbox as soon as we post them.
-            </p>
-
-            <div id="contactForm">
-                <form id="contactForm" action="../contactForm.php" method="POST">
-
-                    <legend>Your information</legend>
-                    <p>
-                        <label for="first">First name:</label>
-                        <input class="inputInfo" id="first" type="text" name="firstName" placeholder="First Name" />
-                    </p>
-                    <p>
-                        <label for="last">Last name:</label>
-                        <input class="inputInfo" id="last" type="text" name="lastName" placeholder="Last name" />
-                    </p>
-                    <p>
-                        <label for="mail">E-mail:</label>
-                        <input class="inputInfo" id="mail" type="email" name="email" placeholder="E-mail" />
-                    </p>
-
-                    <!--<button  id="sendButton" type="button" class="rightSide">Send</button>-->
-                    <input id="sendButton" type="submit" value="Send" />
-
-                </form>
-
+                <h1>Contact</h1>
+                <p>
+                    If you want to have the latest news and happenings delivered directly to you, it is just a petty minute away. The only thing that you have to do is to fill out and send this form and all the juicy news will drop down in your inbox as soon as we post them.
+                </p>
+    
+                <div id="contactForm">
+                    <form id="contactForm" action="../contactForm.php" method="POST">
+    
+                        <legend>Your information</legend>
+                        <p>
+                            <label for="first">First name:</label>
+                            <input class="inputInfo" id="first" type="text" name="firstName" placeholder="First Name" />
+                        </p>
+                        <p>
+                            <label for="last">Last name:</label>
+                            <input class="inputInfo" id="last" type="text" name="lastName" placeholder="Last name" />
+                        </p>
+                        <p>
+                            <label for="mail">E-mail:</label>
+                            <input class="inputInfo" id="mail" type="email" name="email" placeholder="E-mail" />
+                        </p>
+    
+                        <!--<button  id="sendButton" type="button" class="rightSide">Send</button>-->
+                        <input id="sendButton" type="submit" value="Send" />
+    
+                    </form>
+    
+                </div>
+    
             </div>
-
+    
+            <div id="footer">
+    
+                <img id="footerImg" src="../css/pics/square.png" alt="image of the Studio logo" />
+    
+                <p id="footerP">
+                    © 2015 G303 Studios
+                </p>
+    
+            </div>
+    
         </div>
-
-        <div id="footer">
-
-            <img id="footerImg" src="../css/pics/square.png" alt="image of the Studio logo" />
-
-            <p id="footerP">
-                © 2015 G303 Studios
-            </p>
-
-        </div>
-
-    </div>
-
-</body>
+    
+    </body>
 
 </html>
