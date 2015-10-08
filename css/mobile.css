@@ -55,6 +55,14 @@ a {
     margin-top: 10px;
     font-size: small;
 }
+#homeFooter{            /*Sets stats for everything inside of the footer block*/
+    background-color: rgb(35, 35, 35);
+    width: 100%;
+    height: 60px;
+    clear: both;        /*Pushes the footer down to the bottom of the page*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+}
 
 /*----------------------End footer css-----------------------------------------*/
 
@@ -95,13 +103,25 @@ nav ul li a {
     text-decoration:none;
     margin: 0;
 }
-
+#menuLogo {
+    width: 20%;
+}
 
 /*----------------------End menu css----------------------------------------------*/
 
 /*----------------------Home css------------------------------------------------*/
 
-
+#homeBackground {
+    background-color: black;
+    background-image: url("pics/concept.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 100%;
+}
+#homeText {
+    text-align: center;
+}
 
 /*----------------------End home css--------------------------------------------*/
 

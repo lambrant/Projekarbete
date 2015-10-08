@@ -136,6 +136,19 @@ header{
     /*height: 500px;*/
     background-image: url(pics/gameName.png);
     background-position: center;
+    z-index: 999999;
+}
+/*#homeText {*/
+/*    text-align: center;*/
+/*}*/
+#homeBackground {
+    background-image: url();
+    background-color: transparent;
+    padding-top: 0;
+}
+#homeText {
+    display: none;
+    
 }
 /*----------------------End home css--------------------------------------------*/
 
