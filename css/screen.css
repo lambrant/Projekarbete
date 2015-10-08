@@ -10,7 +10,14 @@
     font-weight: normal;
     font-style: normal;
 }
-
+body {
+    /*background-image: url(pics/galaxy.png);*/
+    background-color: black;
+    background-position: top left;  /*Places it in the top left corner*/
+    background-attachment: fixed;   /*Makes sure that it is fixed there*/
+    background-size: cover;         /*Makes sure it covers the page*/
+    z-index: -999999;
+}
 #content {
   width: 70%;
   margin-left: 14%;
@@ -125,29 +132,20 @@ header{
 
 /*----------------------Home css------------------------------------------------*/
 
-#homeBody {
-    background-image: url(pics/galaxy.png);
-    background-position: top left;  /*Places it in the top left corner*/
-    background-attachment: fixed;   /*Makes sure that it is fixed there*/
-    background-size: cover;         /*Makes sure it covers the page*/
-    z-index: -999999;
-}
-#homeContent {
+#homeBackground {
     /*height: 500px;*/
-    background-image: url(pics/gameName.png);
+    /*background-image: url(pics/gameName.png);*/
     background-position: center;
+    background-color: transparent;
+    /*padding-top: 100%;*/
     z-index: 999999;
 }
-/*#homeText {*/
-/*    text-align: center;*/
+/*#homeBackground {*/
+/*    background-image: url();*/
+/*    background-color: transparent;*/
+/*    padding-top: 0%;*/
 /*}*/
-#homeBackground {
-    background-image: url();
-    background-color: transparent;
-    padding-top: 0;
-}
 #homeText {
-    display: none;
     
 }
 /*----------------------End home css--------------------------------------------*/
