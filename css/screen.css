@@ -15,11 +15,19 @@
   width: 70%;
   margin-left: 14%;
 }
-#footerImg{           /*Sets the position and size of the image in the footer*/
-  position: absolute;
-  width: 40px;
-  margin-left: 10px;
-  margin-top: 10px;
+#homeFooter{            /*Sets stats for everything inside of the footer block*/
+    background-color: rgb(35, 35, 35);
+    width: 100%;
+    height: 60px;
+    clear: both;        /*Pushes the footer down to the bottom of the page*/
+    position: absolute;
+    bottom: 0;
+}
+#footerImg{          /*Sets the position and size of the image in the footer*/
+    position: absolute;
+    width: 35px;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 #footerP{       /*Changes the font size and position for the text in the footer*/
   position: absolute;
@@ -108,15 +116,27 @@ header{
     text-decoration:none;
     margin: 0;
 }
-
+#menuLogo {
+    width: 60px;
+}
 
 
 /*----------------------End menu css----------------------------------------------*/
 
 /*----------------------Home css------------------------------------------------*/
 
-
-
+#homeBody {
+    background-image: url(pics/galaxy.png);
+    background-position: top left;  /*Places it in the top left corner*/
+    background-attachment: fixed;   /*Makes sure that it is fixed there*/
+    background-size: cover;         /*Makes sure it covers the page*/
+    z-index: -999999;
+}
+#homeContent {
+    /*height: 500px;*/
+    background-image: url(pics/gameName.png);
+    background-position: center;
+}
 /*----------------------End home css--------------------------------------------*/
 
 /*----------------------About css------------------------------------------------*/
