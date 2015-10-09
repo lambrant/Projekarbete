@@ -16,6 +16,7 @@ $(document).ready(function() {
        }
        return false;
    });
+   
    $("#news2").click(function() {
        
        var val = $(this).text();
@@ -32,6 +33,7 @@ $(document).ready(function() {
        }
        return false;
    });
+   
    $("#news3").click(function() {
        
        var val = $(this).text();
@@ -48,6 +50,7 @@ $(document).ready(function() {
        }
        return false;
    });
+   
    $("#news4").click(function() {
        
        var val = $(this).text();
