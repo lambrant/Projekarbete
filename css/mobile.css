@@ -124,7 +124,9 @@ nav ul li a {
 
 /*----------------------About css------------------------------------------------*/
 
-
+.video {
+    width: 70%;
+}
 
 /*----------------------End about css---------------------------------------------*/
 
@@ -162,7 +164,6 @@ input[type=text], input[type=email], input[type=submit], #edition {
 }
 #sendButton {
     margin-top: 15px;
-    margin-bottom: 10px;
 }
 label, #sendButton:hover {
     color: rgb(255, 100, 0);

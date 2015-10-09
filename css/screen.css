@@ -24,9 +24,15 @@ body {
     background-repeat: no-repeat;
     background-position-x: 50%
 }
+.pageBody {
+    background-image: url("pics/galaxy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 #content {
   width: 70%;
   margin-left: 14%;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 #homeFooter{            /*Sets stats for everything inside of the footer block*/
     background-color: rgb(35, 35, 35);
@@ -163,8 +169,7 @@ header{
 /*----------------------About css------------------------------------------------*/
 
 .video {
-  width: 70%;
-  height: 10%;
+  width: 60%;
 }
 
 /*----------------------End about css---------------------------------------------*/
