@@ -22,7 +22,8 @@ body {
     background-image: url("pics/conceptScreen.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-x: 50%
+    background-position-x: 50%;
+    background-position-y: -45px;
 }
 .pageBody {
     background-image: url("pics/galaxy.png");
@@ -152,14 +153,6 @@ header{
     /*padding-top: 100%;*/
     z-index: 999999;
 }
-/*#homeBackground {*/
-/*    background-color: black;*/
-/*    background-image: url("pics/concept.png");*/
-/*    background-position: center;*/
-/*    background-size: 100%;*/
-/*    background-repeat: no-repeat;*/
-/*    padding-top: 100%;*/
-/*}*/
 #mobileHomeBackground {
     display: none;
 }
