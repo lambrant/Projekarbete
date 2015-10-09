@@ -29,6 +29,7 @@ p {
 }
 .h3Headline {
     text-decoration: underline;
+    color: rgb(255, 100, 0);
 }
 a {
     color: rgb(255, 100, 0);
