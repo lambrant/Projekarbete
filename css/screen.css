@@ -43,6 +43,9 @@ body {
     position: absolute;
     bottom: 0;
 }
+#mobileGoToTop {
+    display: none;
+}
 #footerImg{          /*Sets the position and size of the image in the footer*/
     position: absolute;
     width: 35px;
