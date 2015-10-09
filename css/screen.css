@@ -43,6 +43,12 @@ body {
     position: absolute;
     bottom: 0;
 }
+#goToTop {
+    position: relative;
+    background-color: black;
+    width: 50px;
+    margin-left: 4%;
+}
 #mobileGoToTop {
     display: none;
 }

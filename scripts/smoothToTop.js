@@ -6,11 +6,6 @@ $(document).ready(function() {
     var originalY = element.offset().top;
     var topMargin = 450;
     
-    element.css("position", "relative");
-    element.css("background-color", "black");
-    element.css("width", "50px");
-    element.css("margin-left", "4%");
-    
     $(window).on("scroll", function(event) {
         var scrollTop = $(window).scrollTop();
         
@@ -36,7 +31,12 @@ $(document).ready(function() {
         
      $("html, body").animate({ scrollTop: 0 }, "slow");
      return false;
-     
-  });
+    });
+  
+    $("a[href='#mobileTop']").click(function() {
+          
+       $("html, body").animate({ scrollTop: 0 }, "slow");
+       return false;
+    });
   
 });
