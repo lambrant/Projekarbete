@@ -13,6 +13,7 @@
 body {
     font-family: exo, arial, serif;
     color: rgb(240, 240, 240);
+    background-color: black;
     margin: 0px;
 }
 #content {
@@ -111,16 +112,12 @@ nav ul li a {
 
 /*----------------------Home css------------------------------------------------*/
 
-#homeBackground {
-    background-color: black;
-    background-image: url("pics/concept.png");
+#mobileHomeBackground {
+    background-image: url("pics/conceptMobile.png");
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
     padding-top: 100%;
-}
-#homeText {
-    text-align: center;
 }
 
 /*----------------------End home css--------------------------------------------*/

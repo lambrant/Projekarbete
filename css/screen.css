@@ -18,6 +18,12 @@ body {
     background-size: cover;         /*Makes sure it covers the page*/
     z-index: -999999;
 }
+#homeBody {
+    background-image: url("pics/conceptScreen.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 50%
+}
 #content {
   width: 70%;
   margin-left: 14%;
@@ -141,13 +147,17 @@ header{
     z-index: 999999;
 }
 /*#homeBackground {*/
-/*    background-image: url();*/
-/*    background-color: transparent;*/
-/*    padding-top: 0%;*/
+/*    background-color: black;*/
+/*    background-image: url("pics/concept.png");*/
+/*    background-position: center;*/
+/*    background-size: 100%;*/
+/*    background-repeat: no-repeat;*/
+/*    padding-top: 100%;*/
 /*}*/
-#homeText {
-    
+#mobileHomeBackground {
+    display: none;
 }
+
 /*----------------------End home css--------------------------------------------*/
 
 /*----------------------About css------------------------------------------------*/
