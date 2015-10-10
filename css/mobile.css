@@ -135,6 +135,23 @@ nav ul li a {
 .video {
     width: 70%;
 }
+#imgHolderWindow {
+    width: 70%;
+    height: 100px; 
+    position: relative;
+    overflow: hidden;
+    margin-left: 15%;
+}
+#imgHolder {
+    min-width:2000px;
+    height: 95px;
+    position:absolute;
+    margin-left:-200px;
+}
+#ingameImg {
+    display: inline-block;
+    background-image: url(pics/ingamePics/pic1.jpg), url(pics/ingamePics/pic2.jpg), url(pics/ingamePics/pic3.jpg);
+}
 
 /*----------------------End about css---------------------------------------------*/
 
