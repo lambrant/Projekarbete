@@ -28,19 +28,19 @@
     <body class="pageBody">
         <!--------------------------------------The Menu---------------------------------------------------->
         <header>
-            <abbr title="Click to home"><a href="../html/home.html">
-                    <img id="menuLogo" src="../css/pics/guardLogo.png" alt="Image of the studio logo"></a></abbr>
-            <nav  role="">
-                <ul  class="">
-                    <li><a href="../html/about.html">About</a></li>
+            <!--<abbr title="Click to home"><a href="../html/home.html">-->
+            <!--        <img id="menuLogo" src="../css/pics/guardLogo.png" alt="Image of the studio logo"></a></abbr>-->
+            <!--<nav  role="">-->
+            <!--    <ul  class="">-->
+            <!--        <li><a href="../html/about.html">About</a></li>-->
         
-                    <li><a href="../html/news.html">News</a></li>
+            <!--        <li><a href="../html/news.html">News</a></li>-->
         
-                    <li><a href="../html/pre-order.html">Pre-order</a></li>
+            <!--        <li><a href="../html/pre-order.html">Pre-order</a></li>-->
         
-                    <li><a href="../html/contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <!--        <li><a href="../html/contact.html">Contact</a></li>-->
+            <!--    </ul>-->
+            <!--</nav>-->
         </header>
         <!--------------------------------------End of Menu---------------------------------------------------->
         <div id="container">
@@ -56,7 +56,7 @@
                     If you want to have the latest news and happenings delivered directly to you, it is just a petty minute away. The only thing that you have to do is to fill out and send this form and all the juicy news will drop down in your inbox as soon as we post them.
                 </p>
     
-                <div id="contactForm">
+                <div id="contactFormWindow">
                     <form id="contactForm" action="../contactForm.php" method="POST">
     
                         <legend>Your information</legend>
@@ -73,11 +73,14 @@
                             <input class="inputInfo" id="mail" type="email" name="email" placeholder="E-mail" />
                         </p>
     
-                        <!--<button  id="sendButton" type="button" class="rightSide">Send</button>-->
-                        <input id="sendButton" type="submit" value="Send" />
+                        <button  id="sendButton" type="button">Send</button>
+                        <!--<input id="sendButton" type="submit" value="Send" />-->
     
                     </form>
     
+                </div>
+                <div id="modal">
+                    <p id="modalTxt"></p>
                 </div>
                 
                 <div id="mobileGoToTop">
@@ -99,7 +102,9 @@
         </div>
         
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
         <script type="text/javascript" src="../scripts/smoothToTop.js"></script>
+        <script type="text/javascript" src="../scripts/validateContact.js"></script>
     
     </body>
 
