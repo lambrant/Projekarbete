@@ -1,27 +1,12 @@
 $(document).ready(function() {
     
-    //---------------------Zip validation function------------------------------------
-    
-    var zipTest = function(zip) {
-        if (zip.match("^(0|[1-9][0-9]*)$")) {
-            return zip;
-        }
-        else {
-            return false;
-        }
-    };
-    
-    //---------------------End Zip validation function------------------------------------
-    
     //---------------------Focus out function------------------------------------
     
     $(".inputInfo").blur(function() {
-        console.log("first blur");
         
         if(!$.trim(this.value).length) {
             $(this).css("background-color", "red");
-            console.log("second blur");
-            //$(this).parents('p').addClass('warning');
+            $(this).attr("placeholder", "Required to fill out");
         }
         else {
             $(this).css("background-color", "white");

@@ -1,50 +1,30 @@
 $(document).ready(function() {
     
-    //---------------------Zip validation function------------------------------------
-    
-    var zipTest = function(zip) {
-        if (zip.match("^(0|[1-9][0-9]*)$")) {
-            return zip;
-        }
-        else {
-            return false;
-        }
-    };
-    
-    //---------------------End Zip validation function------------------------------------
-    
     //---------------------Focus out function------------------------------------
     
-    var FocusOut = function(input) {
-        switch(input){
-            case "firstName":
-                $("input#firstName").blur(function () {
-                    console.log("hey");
-	                $(this).after("<span class='blur'> blur() triggered! </span>");
-	                $("span").filter('.blur').fadeOut(4000);
-	  
-                });
-                break;
-            case "lastName":
-                $("input#lastName").blur(function () {
-                    console.log("hey");
-	                $(this).after("<span class='blur'> blur() triggered! </span>");
-	                $("span").filter('.blur').fadeOut(4000);
-	  
-                });
-                break;
-            case "email":
-                $("input#mail").blur(function () {
-                    console.log("hey");
-	                $(this).after("<span class='blur'> blur() triggered! </span>");
-	                $("span").filter('.blur').fadeOut(4000);
-	  
-                });
-                break;
-            case "zip":
-                break;
+    $(".inputInfo").blur(function() {
+        
+        if(!$.trim(this.value).length) {
+            $(this).css("background-color", "red");
+            $(this).attr("placeholder", "Required to fill out");
         }
-    };
+        else {
+            $(this).css("background-color", "white");
+        }
+    });
+    
+    $("select").blur(function() {
+       console.log($(this).val());
+       
+       if ($(this).val() === null) {
+           console.log("empty select");
+           $("select option:first").text("Must choose one..");
+           $(this).css("background-color", "red");
+       }
+       else {
+           $(this).css("background-color", "white");
+       }
+    });
     
     //---------------------End Focus out function------------------------------------
     
@@ -54,19 +34,12 @@ $(document).ready(function() {
         var firstName = $("#first").val();
         var lastName = $("#last").val();
         var email = $("#mail").val();
-        var zip = $("#zip").val();
-        var price = $("#price").val();
-        var inputVal = [firstName, lastName, email, zip, price];
-        var message = ["first name", "last name", "e-mail", "zip-code", "price model"];
+        var edition = $("#edition").val();
+        var inputVal = [firstName, lastName, email, edition];
+        var message = ["first name", "last name", "e-mail", "edition"];
         var counter = 0;
         
         var mailReg = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
-        
-       if (FocusOut("firstName")) {
-            console.log("focusOut");
-            $("#firstNameError").detach();
-            $("input#first").after("<span id='firstNameError'> Please type in your " + message[0] + "." + "</span>");
-        }
         
         if (inputVal[0] === "") {
             counter += 1;
@@ -81,7 +54,7 @@ $(document).ready(function() {
         if (inputVal[1] === "") {
             counter += 1;
             $("#lastNameError").detach();
-            $("input#last").after("<span id='lastNameError'> Please type in your " + message[1] + "." + "</span>");
+            $("input#last").before("<span id='lastNameError'> Please type in your " + message[1] + "." + "</span>");
         }
         else {
             $("#lastNameError").detach();
@@ -91,40 +64,29 @@ $(document).ready(function() {
         if (inputVal[2] === "") {
             counter += 1;
             $("#mailError").detach();
-            $("input#mail").after("<span id='mailError'> Please type in your " + message[2] + "." + "</span>");
+            $("input#mail").before("<span id='mailError'> Please type in your " + message[2] + "." + "</span>");
         }
         else if (!mailReg.test(email)) {
             counter += 1;
             $("#mailError").detach();
-            $("input#mail").after("<span id='mailError'> Please type in a valid " + message[2] + "." + "</span>");
+            $("input#mail").before("<span id='mailError'> Please type in a valid " + message[2] + "." + "</span>");
         }
         else {
             $("#mailError").detach();
             counter -= 1;
         }
         
-        if (inputVal[3] === "") {
+        if ($("select").val() === null) {
             counter += 1;
-            $("#zipError").detach();
-            $("input#zip").after("<span id='zipError'> Please type in your " + message[3] + "." + "</span>");
-        }
-        else if (inputVal[4]) {
-            if (zipTest(zip) === false) {
-                counter += 1;
-                $("#zipError").detach();
-                $("input#zip").after("<span id='zipError'> Please type a valid " + message[3] + "." + "</span>");
-            }
-            else {
-                $("#zipError").detach();
-                counter -= 1;
-            }
+            $("#selectError").detach();
+            $("#edition").before("<span id='selectError'> Please choose an " + message[3] + "." + "</span>");
         }
         else {
-            $("#zipError").detach();
             counter -= 1;
+            $("#selectError").detach();
         }
         
-        if (counter < -2) {
+        if (counter === -4) {
             console.log(counter);
             return true;
         }
@@ -145,7 +107,7 @@ $(document).ready(function() {
             "left": "0px",
             "width": "100%",
             "height": "100%",
-            "background-color": "rgba(0,0,0,0.1)",
+            "background-color": "rgba(0,0,0,0.8)",
             "z-index": "0",
         }).appendTo("body");
     }
@@ -158,11 +120,10 @@ $(document).ready(function() {
         
         displayOverlay();
         
-        $("#modalTxt").text("First name: " + $("#first").val() + 
-                                "Last name: " + $("#last").val() + 
-                                "E-mail: " + $("#mail").val() + 
-                                "Zip-code: " + $("#zip").val() + 
-                                "Price model: " + $("#price").val());
+        $("#modalTxt").html("First name: " + $("#first").val() + "<br />" +
+                                "Last name: " + $("#last").val() + "<br />" +
+                                "E-mail: " + $("#mail").val() + "<br />" +
+                                "Edition: " + $("#edition").val());
         
         $("#modal").dialog({
             
@@ -172,7 +133,8 @@ $(document).ready(function() {
                 "Accept": function() {
                     removeOverlay();
                     $( this ).dialog( "close" );
-                    $("#validForm").submit();
+                    console.log("submit");
+                    $("#pre-orderForm").submit();
                 },
                 Cancel: function() {
                     removeOverlay();
