@@ -135,20 +135,44 @@ nav ul li a {
 .video {
     width: 70%;
 }
-#aboutImgGallery {
+#imgSliderWindow {
     position: relative;
-    width: 85%;
-    height: 192px;
-    margin-left: 7%
+    overflow: hidden;
+    width: 95%;
+    height: 99%;
+    margin-left: 3%;
 }
-#aboutImg {
-    background-image: url("pics/ingamePics/pic1.jpg"),
-                      url("pics/ingamePics/pic2.jpg"), 
-                      url("pics/ingamePics/pic3.jpg");
-    height: 192px;
-    background-repeat: no-repeat;
-    background-size: 100%;
+#imgSlider img {
+    width: 100%;
 }
+#imgSlider {
+    max-height: 250px; 
+    overflow: hidden; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+/*#aboutImgGallery {*/
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*    width: 78%;*/
+/*    height: 192px;*/
+/*    margin-left: 10%*/
+/*}*/
+/*#aboutImgSlides {*/
+/*    height: 192px;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: 100%;*/
+/*}*/
+/*#aboutImg1 {*/
+/*    background-image: url("pics/ingamePics/pic1.jpg");*/
+/*}*/
+/*#aboutImg2 {*/
+/*    background-image: url("pics/ingamePics/pic2.jpg");*/
+/*}*/
+/*#aboutImg3 {*/
+/*    background-image: url("pics/ingamePics/pic3.jpg");*/
+/*}*/
 /*----------------------End about css---------------------------------------------*/
 
 /*----------------------News css-------------------------------------------------*/
