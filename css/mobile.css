@@ -152,27 +152,27 @@ nav ul li a {
     padding: 0; 
     margin: 0;
 }
-/*#aboutImgGallery {*/
-/*    position: relative;*/
-/*    overflow: hidden;*/
-/*    width: 78%;*/
-/*    height: 192px;*/
-/*    margin-left: 10%*/
-/*}*/
-/*#aboutImgSlides {*/
-/*    height: 192px;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: 100%;*/
-/*}*/
-/*#aboutImg1 {*/
-/*    background-image: url("pics/ingamePics/pic1.jpg");*/
-/*}*/
-/*#aboutImg2 {*/
-/*    background-image: url("pics/ingamePics/pic2.jpg");*/
-/*}*/
-/*#aboutImg3 {*/
-/*    background-image: url("pics/ingamePics/pic3.jpg");*/
-/*}*/
+#img1 {
+    background-image: url(pics/ingamePics/pic1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+}
+#img2 {
+    background-image: url(pics/ingamePics/pic2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+}
+#img3 {
+    background-image: url(pics/ingamePics/pic3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+}
 /*----------------------End about css---------------------------------------------*/
 
 /*----------------------News css-------------------------------------------------*/

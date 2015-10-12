@@ -173,15 +173,8 @@ header{
     width: 60%;
     height: 250px !important;
 }
-#aboutImgGallery {
-    width: 63%;
-    height: 192px;
-    margin-bottom: 5%;
-    margin-left: 19%;
-}
-.aboutImgSlides {
-    height: 192px;
-    background-size: 100%;
+#imgSliderWindow {
+    
 }
 
 /*----------------------End about css---------------------------------------------*/

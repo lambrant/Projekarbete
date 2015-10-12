@@ -23,4 +23,12 @@ $(document).ready(function() {
     listItems.not(":first").hide();
     setInterval(changeList, change_img_time);
     
+    $("#prev").click(function() {
+        
+    });
+    
+    $("#next").click(function() {
+        
+    });
+    
 });
