@@ -135,10 +135,19 @@ nav ul li a {
 .video {
     width: 70%;
 }
-#thumbnailImg {
-    background-image: url("pics/ingamePics/pic1.jpg"), 
+#aboutImgGallery {
+    position: relative;
+    width: 85%;
+    height: 192px;
+    margin-left: 7%
+}
+#aboutImg {
+    background-image: url("pics/ingamePics/pic1.jpg"),
                       url("pics/ingamePics/pic2.jpg"), 
                       url("pics/ingamePics/pic3.jpg");
+    height: 192px;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 /*----------------------End about css---------------------------------------------*/
 

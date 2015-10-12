@@ -173,6 +173,19 @@ header{
     width: 60%;
     height: 250px !important;
 }
+#aboutImgGallery {
+    position: relative;
+    width: 85%;
+    height: 328px;
+    margin-left: 7%
+}
+#aboutImg {
+    background-image: url("pics/ingamePics/pic1.jpg"),
+                      url("pics/ingamePics/pic2.jpg"), 
+                      url("pics/ingamePics/pic3.jpg");
+    height: 100%;
+    background-size: cover;
+}
 
 /*----------------------End about css---------------------------------------------*/
 
