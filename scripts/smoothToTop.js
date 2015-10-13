@@ -7,7 +7,7 @@ $(document).ready(function() {
         $("#goToTop").css({position: "fixed",
                             backgroundColor: "black",
                             width: "80px",
-                            marginTop: "450px"});
+                            marginTop: "430px"});
         
     });
     
