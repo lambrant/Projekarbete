@@ -2,18 +2,13 @@ $(document).ready(function() {
     
     //----------div that follows viewer when scrolling------
     
-    var element = $("#goToTop");
-    var originalY = element.offset().top;
-    var topMargin = 450;
-    
     $(window).on("scroll", function(event) {
-        var scrollTop = $(window).scrollTop();
         
-        element.stop(false, false).animate({
-            top: scrollTop < originalY
-                    ? 0
-                    : scrollTop - originalY + topMargin
-        }, 300);
+        $("#goToTop").css({position: "fixed",
+                            backgroundColor: "black",
+                            width: "80px",
+                            marginTop: "450px"});
+        
     });
     
     $(window).scroll(function() {   //to top link appears when scrolled down 100px

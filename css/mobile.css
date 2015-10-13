@@ -18,9 +18,12 @@ body {
 }
 #content {
     background-color: black;
-    float: left;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 35px;
+    margin-bottom: 35px;
+}
+#container {
+    padding-top: 100px;
 }
 p {
     text-align: justify;
@@ -33,12 +36,6 @@ p {
 }
 a {
     color: rgb(255, 100, 0);
-}
-#mobileGoToTop {
-    margin-top: 10%;
-}
-#goToTop {
-    display: none !important;
 }
 
 /*----------------------End general css-----------------------------------------*/
@@ -121,6 +118,9 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: white;
+}
+#backHome {
+    display: none;
 }
 
 /*----------------------End menu css----------------------------------------------*/
