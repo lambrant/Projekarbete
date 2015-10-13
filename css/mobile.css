@@ -21,6 +21,7 @@ body {
     text-align: center;
     padding-top: 35px;
     margin-bottom: 35px;
+    min-height: 800px;
 }
 #container {
     padding-top: 100px;
@@ -36,6 +37,9 @@ p {
 }
 a {
     color: rgb(255, 100, 0);
+}
+#goToTop {
+    display: none;
 }
 
 /*----------------------End general css-----------------------------------------*/
