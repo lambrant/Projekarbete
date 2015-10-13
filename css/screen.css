@@ -95,6 +95,10 @@ body {
     height: 250px !important;
 }
 #imgSliderWindow {
+    width: 85%;
+    margin-left: 8%;
+}
+#imgSlider {
     
 }
 
