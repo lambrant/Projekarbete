@@ -78,18 +78,25 @@ nav {
     display: block;
     position: fixed;
     padding-top: 0px;
-    margin: 0px auto;
-    
 }
 
 nav ul {
     text-align: center;
+    display: inline-block;
 }
 
 nav ul li {
+    text-align: center;
     display: block;
     float: left;
+    border: none;
 }
+
+nav ul li a {
+    padding: 10px;
+}
+
+
 
 /*----------------------End menu css----------------------------------------------*/
 
