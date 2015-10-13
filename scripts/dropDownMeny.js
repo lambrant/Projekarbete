@@ -10,9 +10,6 @@ $("#dropMenuLogo").click(function() {
 })
 
 
-
-
-
 // var dropMenuClicker = document.getElementById("dropMenuLogo");
 // var dropMenu = document.getElementById("dropMenu");
 // // dropMenu.style.display = "none";
