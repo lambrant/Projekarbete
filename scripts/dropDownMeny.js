@@ -1,8 +1,8 @@
 var dropMenuClicker = document.getElementById("dropMenuLogo");
-var dropMenu = document.getElementById("dropMenu")
+var dropMenu = document.getElementById("dropMenu");
+dropMenu.style.display = "none";
 dropMenuClicker.onclick = function()
 {
-    // console.log(dropMenu);
     if(dropMenu.style.display  === "none")
     {
         dropMenu.style.display = "block";
