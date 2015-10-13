@@ -20,7 +20,7 @@ body {
     background-color: black;
     float: left;
     text-align: center;
-    padding-top: 350px; /*Change text from meny */
+    padding-top: 60px;
 }
 p {
     text-align: justify;
@@ -141,41 +141,45 @@ nav ul li a {
 #imgSliderWindow {
     position: relative;
     overflow: hidden;
-    width: 95%;
+    min-width: 230px;
     height: 99%;
-    margin-left: 3%;
 }
 #imgSlider img {
     width: 100%;
 }
 #imgSlider {
-    max-height: 250px; 
+    max-height: 250px;
     overflow: hidden; 
     list-style: none; 
-    padding: 0; 
-    margin: 0;
+    padding: 0;
 }
-#img1 {
-    background-image: url(pics/ingamePics/pic1.jpg);
+.slideShowImg {
     background-size: cover;
     background-repeat: no-repeat;
     height: 250px;
     width: 100%;
 }
-#img2 {
-    background-image: url(pics/ingamePics/pic2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 250px;
-    width: 100%;
-}
-#img3 {
-    background-image: url(pics/ingamePics/pic3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 250px;
-    width: 100%;
-}
+/*#img1 {*/
+/*    background-image: url(pics/ingamePics/pic1.jpg);*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    height: 250px;*/
+/*    width: 100%;*/
+/*}*/
+/*#img2 {*/
+/*    background-image: url(pics/ingamePics/pic2.jpg);*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    height: 250px;*/
+/*    width: 100%;*/
+/*}*/
+/*#img3 {*/
+/*    background-image: url(pics/ingamePics/pic3.jpg);*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    height: 250px;*/
+/*    width: 100%;*/
+/*}*/
 /*----------------------End about css---------------------------------------------*/
 
 /*----------------------News css-------------------------------------------------*/
