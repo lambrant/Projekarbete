@@ -28,6 +28,13 @@ $(document).ready(function() {
     
     //---------------------End Focus out function------------------------------------
     
+    //---------------------Length of name------------------------------------
+    
+    $("#first").attr("maxlength", "30");
+    $("#last").attr("maxlength", "30");
+    
+    //---------------------End Length of name------------------------------------
+    
     //---------------------Validation function------------------------------------
     
     var Validator = function() {

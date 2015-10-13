@@ -15,6 +15,13 @@ $(document).ready(function() {
     
     //---------------------End Focus out function------------------------------------
     
+    //---------------------Length of name------------------------------------
+    
+    $("#first").attr("maxlength", "30");
+    $("#last").attr("maxlength", "30");
+    
+    //---------------------End Length of name------------------------------------
+    
     //---------------------Validation function------------------------------------
     
     var Validator = function() {
@@ -26,7 +33,6 @@ $(document).ready(function() {
         var counter = 0;
         
         var mailReg = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
-        var nameReg = new RegExp();
         
         if (inputVal[0] === "") {
             counter += 1;
