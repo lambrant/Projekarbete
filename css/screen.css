@@ -46,8 +46,7 @@ body {
 #goToTop {
     position: relative;
     background-color: black;
-    width: 50px;
-    margin-left: 4%;
+    width: 80px;
 }
 #mobileGoToTop {
     display: none;
@@ -92,7 +91,11 @@ body {
 /*----------------------About css------------------------------------------------*/
 
 .video {
-  width: 60%;
+    width: 60%;
+    height: 250px !important;
+}
+#imgSliderWindow {
+    
 }
 
 /*----------------------End about css---------------------------------------------*/
