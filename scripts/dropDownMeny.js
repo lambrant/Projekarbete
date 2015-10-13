@@ -2,7 +2,7 @@ var dropMenuClicker = document.getElementById("dropMenuLogo");
 var dropMenu = document.getElementById("dropMenu")
 dropMenuClicker.onclick = function()
 {
-    console.log(dropMenu);
+    // console.log(dropMenu);
     if(dropMenu.style.display  === "none")
     {
         dropMenu.style.display = "block";

@@ -31,8 +31,6 @@ body {
     background-repeat: no-repeat;
 }
 #content {
-  width: 70%;
-  margin-left: 14%;
   background-color: rgba(0, 0, 0, 0.9);
 }
 #homeFooter{            /*Sets stats for everything inside of the footer block*/
@@ -64,11 +62,34 @@ body {
   margin-top: 30px;
   font-size: small;
 }
+
+#container {
+    max-width: 920px;
+    margin: 0px auto;
+}
 /*----------------------End general css-----------------------------------------*/
 
 /*----------------------Menu css------------------------------------------------*/
+header {
+    display: none;
+}
 
+nav {
+    display: block;
+    position: fixed;
+    padding-top: 0px;
+    margin: 0px auto;
+    
+}
 
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: block;
+    float: left;
+}
 
 /*----------------------End menu css----------------------------------------------*/
 
