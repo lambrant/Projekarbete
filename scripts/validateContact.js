@@ -19,6 +19,7 @@ $(document).ready(function() {
     
     $("#first").attr("maxlength", "30");
     $("#last").attr("maxlength", "30");
+    $("#mail").attr("maxlength", "50");
     
     //---------------------End Length of name------------------------------------
     
@@ -47,7 +48,7 @@ $(document).ready(function() {
         if (inputVal[1] === "") {
             counter += 1;
             $("#lastNameError").detach();
-            $("input#last").after("<span id='lastNameError'> Please type in your " + message[1] + "." + "</span>");
+            $("input#last").before("<span id='lastNameError'> Please type in your " + message[1] + "." + "</span>");
         }
         else {
             $("#lastNameError").detach();
@@ -57,12 +58,12 @@ $(document).ready(function() {
         if (inputVal[2] === "") {
             counter += 1;
             $("#mailError").detach();
-            $("input#mail").after("<span id='mailError'> Please type in your " + message[2] + "." + "</span>");
+            $("input#mail").before("<span id='mailError'> Please type in your " + message[2] + "." + "</span>");
         }
         else if (!mailReg.test(email)) {
             counter += 1;
             $("#mailError").detach();
-            $("input#mail").after("<span id='mailError'> Please type in a valid " + message[2] + "." + "</span>");
+            $("input#mail").before("<span id='mailError'> Please type in a valid " + message[2] + "." + "</span>");
         }
         else {
             $("#mailError").detach();
