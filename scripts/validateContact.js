@@ -26,6 +26,7 @@ $(document).ready(function() {
         var counter = 0;
         
         var mailReg = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+        var nameReg = new RegExp();
         
         if (inputVal[0] === "") {
             counter += 1;

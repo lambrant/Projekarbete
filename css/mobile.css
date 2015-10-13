@@ -38,7 +38,7 @@ a {
     margin-top: 10%;
 }
 #goToTop {
-    display: none;
+    display: none !important;
 }
 
 /*----------------------End general css-----------------------------------------*/
@@ -159,27 +159,6 @@ nav ul li a {
     height: 250px;
     width: 100%;
 }
-/*#img1 {*/
-/*    background-image: url(pics/ingamePics/pic1.jpg);*/
-/*    background-size: cover;*/
-/*    background-repeat: no-repeat;*/
-/*    height: 250px;*/
-/*    width: 100%;*/
-/*}*/
-/*#img2 {*/
-/*    background-image: url(pics/ingamePics/pic2.jpg);*/
-/*    background-size: cover;*/
-/*    background-repeat: no-repeat;*/
-/*    height: 250px;*/
-/*    width: 100%;*/
-/*}*/
-/*#img3 {*/
-/*    background-image: url(pics/ingamePics/pic3.jpg);*/
-/*    background-size: cover;*/
-/*    background-repeat: no-repeat;*/
-/*    height: 250px;*/
-/*    width: 100%;*/
-/*}*/
 /*----------------------End about css---------------------------------------------*/
 
 /*----------------------News css-------------------------------------------------*/
@@ -228,19 +207,6 @@ label, #sendButton:hover, .ui-button:hover {
     border-color: black;
     display: none;
 }
-/*#overlay {*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    background-color: black;*/
-/*    filter:alpha(opacity=90);*/
-/*    -moz-opacity:0.9;*/
-/*    -khtml-opacity: 0.9;*/
-/*    opacity: 0.9;*/
-/*    z-index: 10000;*/
-/*}*/
 .ui-dialog {
     z-index: 999999;
 }
@@ -248,15 +214,4 @@ label, #sendButton:hover, .ui-button:hover {
   visibility: hidden;
 }
 /*----------------------End form css--------------------------------------------*/
-
-/*----------------------pre-order css--------------------------------------------*/
-
-
-/*----------------------End pre-order css---------------------------------------*/
-
-/*----------------------Contact css--------------------------------------------*/
-
-
-/*-----------------------End contact css----------------------------------------*/
-
 
