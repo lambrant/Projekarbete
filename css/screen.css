@@ -116,6 +116,12 @@ nav ul li {
     height: 250px !important;
 }
 #imgSliderWindow {
+    width: 85%;
+    margin: auto;
+    max-width: 640px;
+    margin-bottom: 5%;
+}
+#imgSlider {
     
 }
 
