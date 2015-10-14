@@ -145,6 +145,7 @@ nav ul li a:hover {
 
 .video {
     width: 70%;
+    border: 0;
 }
 #imgSliderWindow {
     position: relative;

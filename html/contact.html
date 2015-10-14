@@ -26,13 +26,14 @@
     </head>
     
     <body class="pageBody">
-        <!--------------------------------------The Menu---------------------------------------------------->
-    <header>
-        <abbr title="Home"><a href="../html/home.html">
-                <img id="menuLogo" src="../css/pics/guardLogo.png"></a></abbr>
-        <a href="#"><img id="dropMenuLogo" src="../css/pics/arrowdown.png"></img></a>
-    </header>
-        <nav id="dropMenu" role="">
+        
+        <header>
+            <abbr title="Home"><a href="../html/home.html">
+                    <img id="menuLogo" alt="Studio logo" src="../css/pics/guardLogo.png" /></a></abbr>
+            <a href="#"><img id="dropMenuLogo" alt="Arrow pointing down" src="../css/pics/arrowdown.png" /></a>
+        </header>
+        
+        <nav id="dropMenu">
             <ul  class="">
                 <li><a href="../html/about.html">About</a></li>
     
@@ -43,10 +44,6 @@
                 <li><a href="../html/contact.html">Contact</a></li>
             </ul>
         </nav>
-        <!--------------------------------------End of Menu---------------------------------------------------->
-        
-        
-        
         
         
         <div id="container">
@@ -56,12 +53,12 @@
             </div>
     
             <div id="content">
-                <!-----Backhome--->
+                
                 <div id="backHome">
                     <abbr title="Home"><a href="../html/home.html">
-                    <img src="../css/pics/guardLogo.png"></a></abbr>
+                    <img alt="Studio logo" src="../css/pics/guardLogo.png" /></a></abbr>
                 </div>
-                <!-----Backhome--->
+                
                 <h1>Contact</h1>
                 <p>
                     If you want to have the latest news and happenings delivered directly to you, it is just a petty minute away. The only thing that you have to do is to fill out and send this form and all the juicy news will drop down in your inbox as soon as we post them.
@@ -70,7 +67,7 @@
                 <div id="contactFormWindow">
                     <form id="contactForm" action="../contactForm.php" method="POST">
     
-                        <legend>Your information</legend>
+                        <h3 class="h3Headline">Your information</h3>
                         <p>
                             <label for="first">First name:</label>
                             <input class="inputInfo" id="first" type="text" name="firstName" placeholder="First Name" />
@@ -85,11 +82,11 @@
                         </p>
     
                         <button  id="sendButton" type="button">Send</button>
-                        <!--<input id="sendButton" type="submit" value="Send" />-->
     
                     </form>
     
                 </div>
+                
                 <div id="modal">
                     <p id="modalTxt"></p>
                 </div>

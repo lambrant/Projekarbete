@@ -22,8 +22,7 @@ body {
     background-image: url("pics/conceptScreen.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-x: 50%;
-    background-position-y: -45px;
+    background-position: 50% -45px;
 }
 .pageBody {
     background-image: url("pics/galaxy.png");
