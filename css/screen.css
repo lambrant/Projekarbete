@@ -44,6 +44,16 @@
 #homeContainer {
     max-width: 920px;
 }
+#goToTopButton {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align:center;
+    text-decoration:none;
+}
+#goToTopButton:hover {
+    background-color: white;
+}
+
 /*----------------------End general css-----------------------------------------*/
 
 /*----------------------Menu css------------------------------------------------*/
